@@ -1,0 +1,34 @@
+
+h2 {
+    margin: 0;
+}
+.servicios {
+    border: 3px solid black;
+    height: 300px;
+    /*Agregamos el grid*/
+    display: grid;
+    /*Este grid es lo mismo que el grid-template-row y column*/
+    grid: 50% 50% / 33% 33% 33%;
+}
+
+.servicio {
+    color: white;
+    text-align: center;
+}
+
+.servicio-1 {
+    background-color: darkviolet;
+    /*Tambien lo podemos agregar de esta manera al pocisionar las cajas*/
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    /*Tambien lo podemos pocisionar por areas*/
+    grid-area: 1 / 1 / 3 / 3;
+    /*Esto es lo mismo que arriba*/
+}
+
+.servicio-2 {
+    background-color: limegreen;
+}
+.servicio-3 {
+    background-color: teal;
+}
